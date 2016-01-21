@@ -1,12 +1,9 @@
 **cmdLED.py**
 
-    - Turn given light on or off (uses user input)
-
-    - _Utilizes 1 of 8 lights_
-
-    `sudo python led.py 11 1` (On)
-
-    `sudo python led.py 7 0` (Off)
+- Turn given light on or off (uses user input)
+- _Utilizes 1 of 8 lights_
+- `sudo python led.py 11 1` (On)
+- `sudo python led.py 7 0` (Off)
 
 -----------------------------
 
