@@ -100,12 +100,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias initialZSHRC="sudo apt install zsh"
+export NAME="Seth McClaine"
+export EMAIL="sethimcclaine@gmail.com"
+
+# Haha... you don't have access to this file yet doh-doh
+## alias initialZSHRC="sudo apt install zsh"
+## alias initialLnZSHRC="ln -s ~/Documents/WorkSpace/RPi/RPiConfig/.zshrc
+#~/.zshrc"
 alias initialVIM="sudo apt install vim"
+alias initialLnVimrc="ln -s ~/Documents/WorkSpace/RPi/RPiConfig/.vimrc ~/.vimrc"
 alias initialNodeJS="sudo apt-get install npm"
 alias initialNPM="sudo apt-get install npm"
+alias initialGitEditor="git config --global core.editor "vim""
+alias initialGitName="git config --global user.name \"$NAME\""
+alias initialGitEmail="git config --global user.email \"$EMAIL\""
 #####
-alias initialSetup="initialZSHRC; initialVIM; initialNodeJS; initialNPM;"
+alias initialSetup="initialVIM; initialLnVimrc; initialNodeJS; initialNPM; initialGitEditor; initialGitName; initialGitEmail"
 ####
 
 alias zshrc="vi ~/.zshrc; . ~/.zshrc"
