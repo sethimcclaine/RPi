@@ -125,7 +125,9 @@ alias ws="cd ~/Documents/WorkSpace"
 alias rpi="ws; cd RPi"
 alias py="rpi; cd Python"
 alias js="rpi; cd Node"
-alias stats="conky" #system stats - needs to be run in gui
+alias stats="conky" #system stats - needs to be installed & run in gui
 alias whichpi="hostname"
+alias piconfig="sudo raspi-config"
 
+alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
