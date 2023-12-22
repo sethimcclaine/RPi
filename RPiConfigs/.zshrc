@@ -128,3 +128,4 @@ alias js="rpi; cd Node"
 alias stats="conky" #system stats - needs to be run in gui
 alias whichpi="hostname"
 
+alias shutdown="sudo shutdown -h now"
