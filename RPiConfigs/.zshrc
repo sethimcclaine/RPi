@@ -122,12 +122,14 @@ alias zshrc="vi ~/.zshrc; . ~/.zshrc"
 alias diskspace="df -h"
 alias vimrc="vi ~/.vimrc;"
 alias ws="cd ~/Documents/WorkSpace"
-alias rpi="ws; cd RPi"
+alias rpi="ws; cd RPi; git pull"
 alias py="rpi; cd Python"
 alias js="rpi; cd Node"
 alias stats="conky" #system stats - needs to be installed & run in gui
 alias whichpi="hostname"
 alias piconfig="sudo raspi-config"
+alias myip="hostname -I"
 
 alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
+
