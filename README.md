@@ -15,7 +15,8 @@ git clone git@github.com:sethimcclaine/RPi.git
 
 ## Set zshrc to symbolic link so we can track it in git
 ```
-ln -s ~/Documents/WorkSpace/RPi/RPiConfigs/.zshrc ~/.zshrc
+ln -sf ~/Documents/WorkSpace/RPi/RPiConfigs/.zshrc ~/.zshrc
+. ~/.zshrc
 ```
 
 ## Run zshrc command to finish setup
