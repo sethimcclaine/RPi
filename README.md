@@ -13,6 +13,14 @@ cd ~/Documents/WorkSpace
 git clone git@github.com:sethimcclaine/RPi.git
 ```
 
+## Install zshrc
+```
+sudo apt-get install zsh
+```
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
 ## Set zshrc to symbolic link so we can track it in git
 ```
 ln -sf ~/Documents/WorkSpace/RPi/RPiConfigs/.zshrc ~/.zshrc
@@ -22,14 +30,6 @@ ln -sf ~/Documents/WorkSpace/RPi/RPiConfigs/.zshrc ~/.zshrc
 ## Run zshrc command to finish setup
 ```
 initialSetup
-```
-
-# Install zshrc
-```
-sudo apt-get install zsh
-```
-```
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
 ## Do I still need this?
