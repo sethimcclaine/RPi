@@ -19,6 +19,7 @@ console.log('sensors recieved', sensors)
   setInterval(() => {
     sensors.forEach((sensorId) => {
       const cel = ds18b20.temperatureSync(sensorId)
+      // @TODO import helpers.celToFah(cel)
       const f = cel * 9 / 5 + 32
       console.log(`Current temp for ${sensorId} is ${cel}c (${f}f)`)
     })
