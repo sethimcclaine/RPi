@@ -114,8 +114,9 @@ alias initialNPM="sudo apt-get install npm"
 alias initialGitEditor="git config --global core.editor "vim""
 alias initialGitName="git config --global user.name \"$NAME\""
 alias initialGitEmail="git config --global user.email \"$EMAIL\""
+alias initialAck="sudo curl https://beyondgrep.com/ack-v3.7.0 > /usr/bin/ack && chmod 0755 /usr/bin/ack"
 #####
-alias initialSetup="initialVIM; initialLnVimrc; initialNodeJS; initialNPM; initialGitEditor; initialGitName; initialGitEmail"
+alias initialSetup="initialVIM; initialLnVimrc; initialNodeJS; initialNPM; initialGitEditor; initialGitName; initialGitEmail; initialAck"
 ####
 
 alias zshrc="vi ~/.zshrc; . ~/.zshrc"
@@ -129,6 +130,7 @@ alias stats="conky" #system stats - needs to be installed & run in gui
 alias whichpi="hostname"
 alias piconfig="sudo raspi-config"
 alias myip="hostname -I"
+alias checkmodel="cat /proc/cpuinfo; echo '\n\nSearch for the revision\nhttps://elinux.org/RPi_HardwareHistory';"
 
 alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
