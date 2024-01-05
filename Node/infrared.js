@@ -1,10 +1,12 @@
 // https://www.npmjs.com/package/mlx90614
+const {lcd,write} = require('./LCDConfig')
 const {celToFah} = require('./helpers')
 const MLX906614 = require('mlx90614')
 const execSync = require('child_process').execSync
 const exec = (cmd) => execSync(cmd, {encoding: 'utf-8' }) 
 const getCurrentI2C = () => parseInt(exec('sudo raspi-config nonint get_i2c'), 10)
 
+const LCD = true // true ? On : Off
 const ENABLED = 0
 const DISABLED = 1
 
@@ -24,6 +26,9 @@ const getTemp = () => {
     const fah = Math.floor(celToFah(cel))
     cel = Math.floor(cel)
     console.log(`Current temp: \n\t${cel}c (${fah}f)`)
+    if(LCD) {
+      write(`${cel}c (${fah}f)`, 1)
+    }
   })
 }
 
@@ -31,18 +36,36 @@ const getTemp = () => {
 if (initialI2C === DISABLED) {
   toggleI2C(ENABLED)
 }
+let tempInterval;
 
-const tempInterval = setInterval(getTemp, 1000)
+if(LCD) {
+  lcd.on('ready', () => {
+    console.log('LCD ready')
+    write(`Current temp:`)
+    tempInterval = setInterval(getTemp, 1000)
+  })
+  process.on('SIGNINT', () => {
+    console.log('peace out')
+    clearInterval(tempInterval)
 
-setTimeout(() => {
+    //@TODO disable i2c on exit
+    if (initialI2C === DISABLED) {
+      toggleI2C(DISABLED)
+    }
+  }, 20000)
+} else {
+  tempInterval = setInterval(getTemp, 1000)
+  setTimeout(() => {
+    clearInterval(tempInterval)
 
-  clearInterval(tempInterval)
+    //@TODO disable i2c on exit
+    if (initialI2C === DISABLED) {
+      toggleI2C(DISABLED)
+    }
+  }, 20000)
+}
 
-  //@TODO disable i2c on exit
-  if (initialI2C === DISABLED) {
-    toggleI2C(DISABLED)
-  }
-}, 20000)
+
 
 
 
