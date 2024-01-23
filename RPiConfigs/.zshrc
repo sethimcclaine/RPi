@@ -134,4 +134,5 @@ alias checkmodel="cat /proc/cpuinfo; echo '\n\nSearch for the revision\nhttps://
 
 alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
+alias minePiB="./xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p pi5b"
 
