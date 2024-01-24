@@ -131,3 +131,16 @@ alias roms="cd ~/RetroPie/roms"
 alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
 
+## TMUX (https://tmuxcheatsheet.com/)
+# CTRL+B
+# d - detach
+# a - resume 
+# c - new window
+# 	n - next window
+# 	w - list windows to jump to
+# 		x - kill selected window
+# % - split pane horizontal
+# " - split pane vertical
+# 	arrow - moves screen 
+# 	q # - jump to pane 
+# 	x - kill selected pane
