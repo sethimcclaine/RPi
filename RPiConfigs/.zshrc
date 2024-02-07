@@ -131,7 +131,9 @@ alias roms="cd ~/RetroPie/roms"
 alias restart="sudo reboot"
 alias shutdown="sudo shutdown -h now"
 
-## TMUX (https://tmuxcheatsheet.com/)
+### TMUX 
+## `sudo apt install tmux`
+## (https://tmuxcheatsheet.com/)
 # CTRL+B
 # d - detach
 # a - resume 
