@@ -111,13 +111,14 @@ alias ws="cd ~/Documents/WorkSpace"
 alias rpi="ws; cd RPi; git pull"
 alias py="rpi; cd Python"
 alias js="rpi; cd Node"
-alias stats="conky" #system stats - needs to be installed & run in gui
+alias stats="conky" # System stats - needs to be installed & run in gui
 alias whichpi="hostname"
 alias piconfig="sudo raspi-config"
 alias myip="hostname -I"
 alias checkmodel="cat /proc/cpuinfo; echo '\n\nSearch for the revision\nhttps://elinux.org/RPi_HardwareHistory';"
 alias desktop="startx"
 alias rpiconfig="sudo raspi-config"
+alias ram="free -m" # Shows how much free RAM in MB
 
 ## Mining
 alias minePiA="~/Documents/WorkSpace/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p RPi5-4gb"
@@ -135,17 +136,17 @@ alias shutdown="sudo shutdown -h now"
 ## `sudo apt install tmux`
 ## (https://tmuxcheatsheet.com/)
 # CTRL+B
-# d - detach
-# a - resume 
-# c - new window
-# 	n - next window
-# 	w - list windows to jump to
-# 		x - kill selected window
-# % - split pane horizontal
-# " - split pane vertical
-# 	arrow - moves screen 
-# 	q # - jump to pane 
-# 	x - kill selected pane
+#	 d - detach
+#	 a - resume 
+#	 c - new window
+#	 	n - next window
+#	 	w - list windows to jump to
+#	 		x - kill selected window
+#	 % - split pane horizontal
+#	 " - split pane vertical
+#	 	arrow - moves screen 
+#	 	q # - jump to pane 
+#	 	x - kill selected pane
 
 ###
 rpi # Results in updating the repo on load
