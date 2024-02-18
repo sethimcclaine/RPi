@@ -120,8 +120,8 @@ alias desktop="startx"
 alias rpiconfig="sudo raspi-config"
 
 ## Mining
-alias minePiA="~/Documents/WorkSpace/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p pi5a"
-alias minePiB="~/Documents/WorkSpace/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p pi5b"
+alias minePiA="~/Documents/WorkSpace/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p RPi5-4gb"
+alias minePiB="~/Documents/WorkSpace/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 45GWXJrhsJNfRfaAkYVeNCUA8SBo1TkLvjRbDE66Na8kYUnfQA1QavRhQnvFZL7NRdGRXWpWacMxSEQrvNiWP5jZHEQGQNA -p RPi5-8gb"
 
 ## RetroPie
 alias retropie="emulationstation"
