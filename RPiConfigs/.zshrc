@@ -146,4 +146,7 @@ alias shutdown="sudo shutdown -h now"
 # 	arrow - moves screen 
 # 	q # - jump to pane 
 # 	x - kill selected pane
-whichpi
+
+###
+rpi # Results in updating the repo on load
+whichpi # Reminds us what pi we loaded on
